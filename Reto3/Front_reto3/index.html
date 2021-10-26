@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html >
+<head>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>  
+    <title>Reto</title>
+</head>
+
+<body>
+    <h1> Reto 3 </h1>
+    
+    <h1> Categorias</h1>
+    <div id="resultado1"></div>
+    <script type="text/javascript">
+    window.onload = autoInicioCategoria();
+    </script>
+    
+    <div>
+        <input type="text" id="Aname" placeholder="name">
+        <input type="text" id="Adescription" placeholder="description">
+               
+    </div>
+
+    <button onclick="guardarInformacionCategorias()">Guardar Categorias</button>
+
+     <!--Tabla Computadores-->
+    <h1> Computadores</h1>
+    <div id="resultado2"></div>
+    <script type="text/javascript">
+    window.onload = autoInicioComputer();
+    </script>
+
+      
+    <div>
+        <input type="text" id="Bname" placeholder="name">
+        <input type="text" id="Bbrand" placeholder="brand">
+        <input type="number" id="Byear" placeholder="year">
+        <input type="text" id="Bdescription" placeholder="description"> 
+        <select id="select-category"></select>
+        
+    </div>
+    <button onclick="guardarInformacionComputer()">Guardar Computadores</button>
+
+    <!--Tabla Clientes-->
+        
+    
+    <h1> Clientes</h1>
+    <div id="resultado3"></div>
+    <script type="text/javascript">
+    window.onload = autoInicioClient();
+    </script>
+
+    <div>
+        <input type="text" id="Cemail" placeholder="email">
+        <input type="text" id="Cpassword" placeholder="password">
+        <input type="text" id="Cname" placeholder="name">
+        <input type="number" id="Cage" placeholder="age">  
+    </div>
+      
+   
+    <button onclick="guardarInformacionClient()">Guardar Clientes</button>
+
+
+    <!--Tabla Mensaje-->
+    <h1> Message</h1>
+    <div id="resultado4"></div>
+    <script type="text/javascript">
+    window.onload = autoInicioMessage();
+    </script>
+
+      
+    <div>
+        <input type="text" id="DmessageText" placeholder="messageText">
+
+        
+    </div>
+    <button onclick="guardarInformacionMessage()">Guardar Mensajes</button>
+
+
+     <!--Tabla Reservación-->
+     <h1> Reservaciones</h1>
+     <div id="resultado5"></div>
+     <script type="text/javascript">
+     window.onload = autoInicioReservation();
+     </script>
+ 
+       
+     <div>
+         <input type="date" id="EstartDate" placeholder="startDate">
+         <input type="date" id="EdevolutionDate" placeholder="devolutionDate">
+         <input type="text" id="Estatus" placeholder="status">
+
+         
+     </div>
+     <button onclick="guardarInformacionReservation()">Guardar Reservaciones</button>
+
+
+
+</body>
+</html>
